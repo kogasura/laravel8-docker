@@ -1,0 +1,58 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: ./infra/php
+      args:
+        - TZ=${TZ}
+    volumes:
+      - ./backend:/work
+    working_dir: /work
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_DATABASE=${DB_NAME}
+      - DB_USERNAME=${DB_USER}
+      - DB_PASSWORD=${DB_PASS}
+      - TZ=${TZ}
+
+  web:
+    image: nginx:1.18-alpine
+    depends_on:
+      - app
+    ports:
+      - 80:80
+    volumes:
+      - ./backend:/work
+      - ./infra/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    working_dir: /work
+
+  db:
+    image: mysql:8.0
+    container_name: db-host
+    volumes:
+      - db-store:/var/lib/mysql
+      - ./infra/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_USER=${DB_USER}
+      - MYSQL_PASSWORD=${DB_PASS}
+      - MYSQL_ROOT_PASSWORD=${DB_PASS}
+      - TZ=${TZ}
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin  #Dockerfileからbuildしない場合はイメージ名を明記
+    environment:
+      - PMA_ARBITRARY=1  #任意のサーバーで起動
+      - PMA_HOST=db-host
+      - PMA_USER=${DB_USER}
+      - PMA_PASSWORD=${DB_PASS}
+    links:
+      - db  #mysqlコンテナにリンクする
+    ports:
+        - 8080:80  #localhost:8080とphpmyadminコンテナの80番ポートをつなげる
+    volumes:
+        - db-store:/sessions
+
+volumes:
+  db-store:
