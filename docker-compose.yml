@@ -43,20 +43,20 @@ services:
     ports:
       - 3316:3306
 
-  db_test:
-    image: mysql:8.0
-    container_name: db-test
-    volumes:
-      - db-store-test:/var/lib/mysql
-      - ./infra/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
-    environment:
-      - MYSQL_DATABASE=${DB_NAME}
-      - MYSQL_USER=${DB_USER}
-      - MYSQL_PASSWORD=${DB_PASS}
-      - MYSQL_ROOT_PASSWORD=${DB_PASS}
-      - TZ=${TZ}
-    ports:
-      - 3326:3306
+  # db_test:
+  #   image: mysql:8.0
+  #   container_name: db-test
+  #   volumes:
+  #     - ./db_test_storage:/var/lib/mysql
+  #     - ./infra/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+  #   environment:
+  #     - MYSQL_DATABASE=${DB_NAME}
+  #     - MYSQL_USER=${DB_USER}
+  #     - MYSQL_PASSWORD=${DB_PASS}
+  #     - MYSQL_ROOT_PASSWORD=${DB_PASS}
+  #     - TZ=${TZ}
+  #   ports:
+  #     - 3326:3306
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin  #Dockerfileからbuildしない場合はイメージ名を明記
