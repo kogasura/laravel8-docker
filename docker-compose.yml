@@ -43,8 +43,7 @@ services:
       - TZ=${TZ}
     ports:
       - 3316:3306
-    user:
-      - $(id -u $USER):$(id -g $USER)
+    user: "$(id -u $USER):$(id -g $USER)"
 
   # db_test:
   #   image: mysql:8.0
