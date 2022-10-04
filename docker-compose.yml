@@ -34,6 +34,7 @@ services:
     volumes:
       - db-store:/var/lib/mysql
       - ./infra/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - /etc/passwd:/etc/passwd:ro
     environment:
       - MYSQL_DATABASE=${DB_NAME}
       - MYSQL_USER=${DB_USER}
@@ -42,6 +43,8 @@ services:
       - TZ=${TZ}
     ports:
       - 3316:3306
+    user:
+      - $(id -u $USER):$(id -g $USER)
 
   # db_test:
   #   image: mysql:8.0
