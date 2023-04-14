@@ -1,0 +1,21 @@
+[2023-02-01T23:46:17.889Z] Dev Containers 0.266.1 in VS Code 1.71.2 (74b1f979648cc44d385a2286793c226e611f59e7).
+[2023-02-01T23:46:17.889Z] Start: Run: docker version --format {{.Server.APIVersion}}
+[2023-02-01T23:46:17.945Z] Stop (56 ms): Run: docker version --format {{.Server.APIVersion}}
+[2023-02-01T23:46:17.946Z] 1.41
+[2023-02-01T23:46:17.950Z] Start: Run: docker -v
+[2023-02-01T23:46:17.975Z] Stop (25 ms): Run: docker -v
+[2023-02-01T23:46:17.975Z] Start: Run: docker events --format {{json .}} --filter event=create --filter event=destroy --filter event=die --filter event=health-status --filter event=kill --filter event=pause --filter event=rename --filter event=resize --filter event=restart --filter event=start --filter event=stop --filter event=unpause --filter event=update --filter event=exec_create
+[2023-02-01T23:46:17.985Z] Start: Run: docker ps -q -a
+[2023-02-01T23:46:18.013Z] Start: Run: docker version --format {{.Server.APIVersion}}
+[2023-02-01T23:46:18.025Z] Stop (40 ms): Run: docker ps -q -a
+[2023-02-01T23:46:18.032Z] Start: Run: docker inspect --type container bc9c689fe102 226563f53d2d 00ea4696b55f 15f570c8c645
+[2023-02-01T23:46:18.059Z] Stop (46 ms): Run: docker version --format {{.Server.APIVersion}}
+[2023-02-01T23:46:18.060Z] 1.41
+[2023-02-01T23:46:18.061Z] Start: Run: docker -v
+[2023-02-01T23:46:18.070Z] Stop (38 ms): Run: docker inspect --type container bc9c689fe102 226563f53d2d 00ea4696b55f 15f570c8c645
+[2023-02-01T23:46:18.128Z] Stop (67 ms): Run: docker -v
+[2023-02-01T23:46:18.129Z] Start: Run: docker events --format {{json .}} --filter event=destroy --filter event=die --filter event=kill --filter event=create --filter event=rename --filter event=resize --filter event=restart --filter event=start --filter event=stop --filter event=unpause --filter event=prune
+[2023-02-01T23:46:18.135Z] Start: Run: docker volume ls -q
+[2023-02-01T23:46:18.168Z] Stop (33 ms): Run: docker volume ls -q
+[2023-02-01T23:46:18.169Z] Start: Run: docker inspect --type volume cf8b8d6680d1a40268ff663fa15dfb09457d7efe7ea3505ca5414b7ff3cdfdf5 laravel8-docker_db-store
+[2023-02-01T23:46:18.195Z] Stop (26 ms): Run: docker inspect --type volume cf8b8d6680d1a40268ff663fa15dfb09457d7efe7ea3505ca5414b7ff3cdfdf5 laravel8-docker_db-store

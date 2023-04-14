@@ -1,0 +1,9 @@
+[2023-02-02 08:44:54.754] [renderer1] [warning] [onecentlin.laravel-blade]: Cannot register 'blade.format.enable'. This property is already registered.
+[2023-02-02 08:44:54.879] [renderer1] [error] [xabikos.JavaScriptSnippets]: Unknown language in `contributes.JavaScriptSnippets.language`. Provided value: vue
+[2023-02-02 08:46:01.747] [renderer1] [warning] No search provider registered for scheme: file, waiting
+[2023-02-02 08:46:01.917] [renderer1] [error] [onecentlin.laravel5-snippets]: Unknown language in `contributes.laravel5-snippets.language`. Provided value: blade
+[2023-02-02 08:46:01.917] [renderer1] [error] [xabikos.JavaScriptSnippets]: Unknown language in `contributes.JavaScriptSnippets.language`. Provided value: vue
+[2023-02-02 08:46:05.448] [renderer1] [warning] [onecentlin.laravel-blade]: Cannot register 'blade.format.enable'. This property is already registered.
+[2023-02-02 08:46:05.504] [renderer1] [error] [xabikos.JavaScriptSnippets]: Unknown language in `contributes.JavaScriptSnippets.language`. Provided value: vue
+[2023-02-02 08:46:29.857] [renderer1] [error] [text file model] handleSaveError(0) - exit - resulted in a save error: Error: Unable to write file '/home/yuuki_okubo/laravel8-docker/backend/app/Http/Livewire/JobOffer.php' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/home/yuuki_okubo/laravel8-docker/backend/app/Http/Livewire/JobOffer.php') file:///home/yuuki_okubo/laravel8-docker/backend/app/Http/Livewire/JobOffer.php
+[2023-02-02 08:46:36.216] [renderer1] [error] [text file model] handleSaveError(0) - exit - resulted in a save error: Error: Unable to write file '/home/yuuki_okubo/laravel8-docker/backend/app/Http/Livewire/JobOffer.php' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/home/yuuki_okubo/laravel8-docker/backend/app/Http/Livewire/JobOffer.php') file:///home/yuuki_okubo/laravel8-docker/backend/app/Http/Livewire/JobOffer.php

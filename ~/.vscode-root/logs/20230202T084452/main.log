@@ -1,0 +1,8 @@
+[2023-02-02 08:44:52.716] [main] [info] update#setState idle
+[2023-02-02 08:44:54.272] [main] [info] Starting extension host with pid 16626 (fork() took 10 ms).
+[2023-02-02 08:45:22.732] [main] [info] update#setState checking for updates
+[2023-02-02 08:45:22.749] [main] [info] update#setState available for download
+[2023-02-02 08:46:00.002] [main] [info] Extension host with pid 16626 exited with code: 0, signal: null.
+[2023-02-02 08:46:01.012] [main] [info] Starting extension host with pid 16779 (fork() took 6 ms).
+[2023-02-02 08:46:42.292] [main] [info] Waiting for extension host with pid 16779 to exit.
+[2023-02-02 08:46:42.309] [main] [info] Extension host with pid 16779 exited with code: 0, signal: null.

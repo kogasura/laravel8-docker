@@ -1,0 +1,27 @@
+[2023-02-01T23:46:05.671Z] Log level: Info
+[2023-02-01T23:46:05.674Z] [info] Validating found git in: git
+[2023-02-01T23:46:05.687Z] [info] Using git 2.30.2 from git
+[2023-02-01T23:46:05.703Z] > git rev-parse --show-toplevel [5ms]
+[2023-02-01T23:46:05.717Z] > git rev-parse --git-dir --git-common-dir [5ms]
+[2023-02-01T23:46:05.726Z] [info] Open repository: /home/yuuki_okubo/laravel8-docker/backend
+[2023-02-01T23:46:05.770Z] > git status -z -uall [36ms]
+[2023-02-01T23:46:05.777Z] > git symbolic-ref --short HEAD [2ms]
+[2023-02-01T23:46:05.789Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/hard_skill_tag refs/remotes/hard_skill_tag [6ms]
+[2023-02-01T23:46:05.834Z] > git remote --verbose [34ms]
+[2023-02-01T23:46:05.835Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [39ms]
+[2023-02-01T23:46:05.851Z] > git config --get commit.template [2ms]
+[2023-02-01T23:46:05.979Z] > git status -z -uall [121ms]
+[2023-02-01T23:46:06.007Z] > git symbolic-ref --short HEAD [22ms]
+[2023-02-01T23:46:06.017Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/hard_skill_tag refs/remotes/hard_skill_tag [2ms]
+[2023-02-01T23:46:06.033Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [8ms]
+[2023-02-01T23:46:06.045Z] > git remote --verbose [13ms]
+[2023-02-01T23:46:06.055Z] > git config --get commit.template [1ms]
+[2023-02-01T23:46:06.266Z] > git check-ignore -v -z --stdin [2ms]
+[2023-02-01T23:46:09.690Z] > git check-ignore -v -z --stdin [4ms]
+[2023-02-01T23:46:09.992Z] > git show --textconv HEAD:app/Http/Livewire/JobOffer.php [13ms]
+[2023-02-01T23:46:09.994Z] > git ls-tree -l HEAD -- /home/yuuki_okubo/laravel8-docker/backend/app/Http/Livewire/JobOffer.php [8ms]
+[2023-02-01T23:46:10.496Z] > git check-ignore -v -z --stdin [2ms]
+[2023-02-01T23:46:42.200Z] > git status -z -uall [40ms]
+[2023-02-01T23:46:42.206Z] > git symbolic-ref --short HEAD [1ms]
+[2023-02-01T23:46:42.212Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/hard_skill_tag refs/remotes/hard_skill_tag [2ms]
+[2023-02-01T23:46:42.222Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [5ms]

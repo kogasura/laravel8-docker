@@ -1,0 +1,12 @@
+[Info  - 8:46:10 AM] Initialising intelephense 1.9.4
+[Info  - 8:46:10 AM] Initialised in 14 ms
+[Info  - 8:46:10 AM] Environment changed. Refreshing 1 in memory documents.
+[Info  - 8:46:10 AM] Searching file:///home/yuuki_okubo/.vscode/extensions/bmewburn.vscode-intelephense-client-1.9.4/node_modules/intelephense/lib/stub for files to index.
+[Info  - 8:46:10 AM] Searching file:///home/yuuki_okubo/laravel8-docker/backend for files to index.
+[Warn  - 8:46:11 AM] file:///home/yuuki_okubo/laravel8-docker/backend/vendor/composer/autoload_classmap.php is over the maximum file size of 1000000 bytes.
+[Warn  - 8:46:11 AM] file:///home/yuuki_okubo/laravel8-docker/backend/vendor/composer/autoload_static.php is over the maximum file size of 1000000 bytes.
+[Warn  - 8:46:11 AM] file:///home/yuuki_okubo/laravel8-docker/backend/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 8:46:11 AM] Indexing started.
+[Info  - 8:46:29 AM] Indexing ended. 13048 files indexed in 17s.
+[Info  - 8:46:29 AM] Writing state to /home/yuuki_okubo/laravel8-docker/~/.vscode-root/User/workspaceStorage/2bf4828399ce3b38f35590e9380f5f39/bmewburn.vscode-intelephense-client/4450cbad.
+[Info  - 8:46:30 AM] Wrote state in 1.4s.

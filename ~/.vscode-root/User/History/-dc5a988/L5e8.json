@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "file:///home/yuuki_okubo/.vscode/extensions/atlassian.atlascode-3.0.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    }
+}
