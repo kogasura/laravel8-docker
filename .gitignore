@@ -2,3 +2,4 @@
 /etc/
 /backend/*
 /db_test_storage/*
+.env
