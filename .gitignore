@@ -1,5 +1,6 @@
 /__MACOSX/
 /etc/
 /backend/*
+/backend
 /db_test_storage/*
 .env
